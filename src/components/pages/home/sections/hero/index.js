@@ -15,9 +15,9 @@ export default function Hero() {
                 <h4 className="visually-hidden">Header content</h4>
                 <div>
                     <h1>Xiao NaN</h1>
-                    <p>Front-web developer</p>
+                    <p>Designer</p>
                     <Tags/>
-                    <p>Een creatieve front-end develop met oog voor design waarbij toegankelijkheid belangrijk is voor iedereen!</p>
+                    <p>Een creatieve designer voor oog voor detail waarbij toegankelijkheid belangrijk is voor iedereen!</p>
                     <LinkPrimaire
                         link={"/over-mij"}
                         aria="Over mij knop"
@@ -34,7 +34,7 @@ export default function Hero() {
                 />
             </section>
 
-            {/* <Projects/> */}
+            <Projects/>
 
             <Image
                 src="/img/me.gif"

@@ -1,27 +1,35 @@
 
-import Thumbnail from "../../../../../cards/thumbnail";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "./projects.module.scss";
 
 export default async function Projects() {
-    const fetchData = await fetch('https://xiaonan.nl/wp-json/wp/v2/projects?acf_format=standard')
-    const data = await fetchData.json();
 
     return (
         <main className={styles.section}>
             <h2 className="visually-hidden">Projecten</h2>
             <ul id="projecten">
-                {data.map((item, key) => (
-                    <li key={key}>
-                        <Thumbnail
-                            title={item.title.rendered}
-                            goal={item.acf.goal}
-                            img={item.acf.images[0]}
-                            alt={item.title.rendered}
-                            data={item}
-                            slug={item.slug}
-                        />
+  
+                    <li>
+                    <article className={`${styles.article}`} tabIndex={1}>
+                        <Link href={`/projecten/tmdb`}>
+                            <h3>TMDB Dating app</h3>
+                            <p>Jongeren helpen</p>
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                            <div className={styles.overlay}>
+                                <Image
+                                    src={"/img/projects/bikkeltraining.jpg"}
+                                    width={480}
+                                    height={152}
+                                    alt="Project"
+                                />
+                            </div>
+                        </Link>
+                    </article>
                     </li>
-                ))}
+ 
             </ul>
         </main>
     )
