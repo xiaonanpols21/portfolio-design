@@ -34,7 +34,7 @@ export default function Hero() {
                 />
             </section>
 
-            <Projects/>
+            {/* <Projects/> */}
 
             <Image
                 src="/img/me.gif"
