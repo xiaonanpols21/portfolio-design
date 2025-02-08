@@ -50,7 +50,7 @@ export default function Project() {
                     <h3>Volgende project</h3>
                     <Link href={`/projecten/shift-savy`}>
                         <article className={`${styles.article}`} tabIndex={1}>
-                            <h3>Shift savy</h3>
+                            <h3>Shift Savy</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
                             <ul>
                                 <li>UI</li>

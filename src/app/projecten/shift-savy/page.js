@@ -19,7 +19,7 @@ export default function Project() {
                     <RadioShiftSavy classes={styles.radio}/>
 
                     <div>
-                        <h1>Bikkeltraining</h1>
+                        <h1>Shift Savy</h1>
                         <ul>
                             <li>UX</li>
                             <li>UI</li>
@@ -39,9 +39,12 @@ export default function Project() {
 
                             <h2>Wat heb ik gedaan?</h2>
                             <div>
-                                <p>Als stagiair bij Devani heb ik de website van Bikkeltraining ontworpen en geprogrammeerd. Dit project is ontworpen in Sketch. Hierbij is er een style guide gemaakt om consistent te blijven en zijn er meerdere feedback momenten geweest met de klant.</p> 
-                                <p>Bekijk mijn volledige <Link href="https://devani-stageverslag.vercel.app/werkzaamheden/bikkeltraining-design">designproces!</Link></p>
-                                <p>Met dit project heb ik geleerd hoe je met componenten in Sketch werkt en ontdekt hoe je een ontwerp kunt maken dat specifiek aansluit bij de klant, zodat zij hun kernwaarden optimaal op het web kunnen presenteren.</p>
+                                <p>Met dit 20-weekse project heb ik onderzocht wat jongeren van 15 en 16 jaar motiveert om in de supermarkt te blijven werken. Daarnaast heb ik in kaart gebracht tegen welke uitdagingen zij op de werkvloer aanlopen. Op basis van hun ervaringen, frustraties en behoeften heb ik een digitaal product ontwikkeld dat gamification inzet om jongeren te motiveren om extra te gaan werken. Neem gerust <Link href={"/#contact"}>contact</Link> op om het volledige ontwerpproces van A tot Z te bekijken.</p>
+                                <p>Er zijn tests uitgevoerd met de doelgroep om te onderzoeken wat zij van het product vinden en wat er verbeterd kan worden, zowel op het gebied van <Link href={"https://www.youtube.com/watch?v=qn-JWbkp5GM&feature=youtu.be"}>design</Link> als de <Link href={"https://www.youtube.com/watch?v=7gJ63qXLf9E&feature=youtu.be"}>technische</Link> aspecten.</p>
+                                <p>Daarnaast is er een promotievideo gemaakt die visualiseert welke ervaringen jongeren momenteel hebben en hoe het product hen motiveert om extra te gaan werken.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xlgs8Ul4TwM?si=KWD9SPOqxuuC8FnF" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                <p>Om te laten zien hoe het product functioneert binnen de workflow van de doelgroep, is er een uitgebreide demonstratievideo ontwikkeld.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WbTYCKaZsWU?si=CzRhlTJxDpl5Ba0w" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             </div>
                         </section>
                     </div>
@@ -51,9 +54,9 @@ export default function Project() {
             <section className={styles.nextProject}>
                 <div>
                     <h3>Volgende project</h3>
-                    <Link href={`/projecten/shift-savy`}>
+                    <Link href={`/projecten/xiaoco-ijs`}>
                         <article className={`${styles.article}`} tabIndex={1}>
-                            <h3>Shift savy</h3>
+                            <h3>Xiaoco Ijs</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
                             <ul>
                                 <li>UI</li>
@@ -65,7 +68,7 @@ export default function Project() {
                             </ul>
                             <div className={styles.overlay}>
                                 <Image
-                                    src={"/img/projects/deka.png"}
+                                    src={"/img/projects/xiaoco-ijs.png"}
                                     width={480}
                                     height={152}
                                     alt="Xiaoco Ijs"

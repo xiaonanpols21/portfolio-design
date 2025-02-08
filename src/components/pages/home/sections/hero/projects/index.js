@@ -11,9 +11,9 @@ export default async function Projects() {
             <ul id="projecten">
   
                 <li>
-                    <article className={`${styles.article}`} tabIndex={1}>
+                    <article className={`${styles.article}`} tabIndex={-1}>
                         <Link href={`/projecten/shift-savy`}>
-                            <h3>Shift savy</h3>
+                            <h3>Shift Savy</h3>
                             <p>Jonge supermarkt medewerkers motiveren om extra te gaan werken!</p>
                             <ul>
                                 <li>UX</li>
@@ -33,7 +33,7 @@ export default async function Projects() {
                     </article>
                 </li>
                 <li>
-                    <article className={`${styles.article}`} tabIndex={1}>
+                    <article className={`${styles.article}`} tabIndex={-1}>
                         <Link href={`/projecten/bikkeltraining`}>
                             <h3>Xiaoco Ijs</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
@@ -57,7 +57,7 @@ export default async function Projects() {
                     </article>
                 </li>
                 <li>
-                    <article className={`${styles.article}`} tabIndex={1}>
+                    <article className={`${styles.article}`} tabIndex={-1}>
                         <Link href={`/projecten/bikkeltraining`}>
                             <h3>Bikkeltraining</h3>
                             <p>Een sportschoolwebsite designen met Sketch.</p>
