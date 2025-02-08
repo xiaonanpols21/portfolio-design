@@ -47,6 +47,44 @@ body {
 			}
 		}
 	}
+
+	// Shift savy slider
+	&:has(input[value="deka-1"]:checked) {
+		.slider_dialog__92viS div {
+			background-image: url("../../public/img/projects/deka.png");
+		}
+	}
+
+	&:has(input[value="deka-2"]:checked) {
+		.slider_dialog__92viS div {
+			background-image: url("../../public/img/projects/deka-2.jpg");
+		}
+	}
+
+	&:has(input[value="deka-3"]:checked) {
+		.slider_dialog__92viS div {
+			background-image: url("../../public/img/projects/deka-3.jpg");
+		}
+	}
+
+	// Shift savy radio
+	&:has(input[value="deka-1-radio"]:checked) {
+		.radio_overlay__LoC0j div, .radio_dialog__7YhCp div {
+			background-image: url("../../public/img/projects/deka.png");
+		}
+	}
+
+	&:has(input[value="deka-2-radio"]:checked) {
+		.radio_overlay__LoC0j div, .radio_dialog__7YhCp div {
+			background-image: url("../../public/img/projects/deka-2.jpg");
+		}
+	}
+
+	&:has(input[value="deka-3-radio"]:checked) {
+		.radio_overlay__LoC0j div, .radio_dialog__7YhCp div {
+			background-image: url("../../public/img/projects/deka-3.jpg");
+		}
+	}
 }
 
 * {

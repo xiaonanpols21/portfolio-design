@@ -1,0 +1,284 @@
+@use "../../../styles/variables.scss" as v;
+
+.main {
+    @include v.flex(column, 1.25rem);
+    padding: 0px 1.25rem;
+    background-color: rgba(v.$pink, 0.15);
+
+    h1 {
+        @include v.f34;
+        margin-top: calc(2.5rem - 1.25rem);
+    }
+
+    > div > div {
+        @include v.max-500;
+        @include v.flex(column, 1.25rem);
+
+        > p:first-of-type {
+            margin: 1.25rem 0px -0.75rem 0px;
+            font-style: italic;
+        }
+
+        ul {
+            @include v.flex(row, 0.75rem);
+            flex-wrap: wrap;
+    
+            li {
+                @include v.tags-blue;
+            }
+        }
+    }
+
+    .btn {
+        margin-bottom: 3.25rem;
+    }
+}
+
+.slider {
+    margin-top: calc(4.75rem + 3.25rem * 1.5);
+    margin-bottom: 1.25rem;
+}
+
+.radio {
+    display: none
+}
+
+.content {
+    @include v.flex(column, 1.25rem);
+
+    h2 {
+        @include v.f18;
+        margin-bottom: -1.25rem;
+    }
+
+    div {
+        @include v.flex(column, 1.25rem);
+
+        iframe {
+            width: 100%;
+            border-radius: v.$radius-12;
+
+      
+        }
+
+        div {
+            width: fit-content !important;
+            margin: auto;
+        }
+
+        video {
+            width: fit-content;
+            height: 37.5rem;
+            margin: auto;
+            transition: v.$transition-basic;
+
+            &:focus-visible {
+                outline: v.$outline-basic;
+                outline-offset: 0.5rem;
+            }
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        transition: v.$transition-basic;
+
+        &:hover {
+            color: v.$pink;
+        }
+
+        &:focus-visible {
+            @include v.focus-nav;
+        }
+    }
+}
+
+.bookmark {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 4.5rem;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.nextProject {
+    padding: 4.5rem 1.25rem 6.25rem 1.25rem;
+    background-color: rgba(v.$pink, 0.15);
+
+    h3 {
+        @include v.f26;
+        margin-bottom: 1.25rem;
+    }
+
+    > div {
+        @include v.max-500;
+    }
+}
+
+.article {
+    position: relative;
+    width: 16.25rem;
+    height: fit-content;
+    border: 1px solid v.$black;
+    border-radius: v.$radius-12;
+    background-color: v.$white;
+    box-shadow: v.$box-shadow-basic;
+    @include v.flex(column, 0.5rem);
+    width: 100%;
+    max-width: 31.25rem;
+    padding: 1.25rem 1.25rem 2rem 1.25rem;
+    transition: v.$transition-basic;
+
+    &:focus-visible {
+        @include v.focus-card;
+    }
+
+    &:hover .overlay img {
+        transform: scale(1.1);
+    }
+
+    a {
+        @include v.flex(column, 0.5rem);
+        padding: 1.25rem 1.25rem 2rem 1.25rem;
+        transition: v.$transition-basic;
+
+        &:focus-visible {
+            outline: none;
+            @include v.focus-card;
+        }
+    }
+
+    h3 {
+        @include v.f22;
+        margin-top: calc(0.75rem - 0.5rem);
+        z-index: 1;
+    }
+
+    p {
+        @include v.f14;
+    }
+
+    .overlay {
+        order: -1;
+        overflow: hidden;
+        height: 14.5rem;
+        border-radius: v.$radius-12;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: v.$radius-12;
+            transition: v.$transition-basic;
+        }
+    }
+
+    ul {
+        @include v.flex(row, 0.75rem);
+        flex-wrap: wrap;
+        margin-top: calc(1.25rem - 0.5rem);
+
+        li {
+            @include v.tags-blue;
+        }
+    }
+
+
+}
+
+@media (min-width: 992px) { 
+    .main {
+        padding-top: v.$padding-top-nav;
+
+        > div {
+            @include v.grid-col(1fr 1fr, 3.25rem);
+        }
+
+        > div > div {
+            grid-column: 2/3;
+            max-width: 100%;
+            padding-right: v.$media-padding-right;
+        }
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .radio {
+        display: block;
+        padding-left: v.$media-padding-left;
+    }
+
+    .bookmark {
+        right: 3.25rem;
+        bottom: 3.25rem;
+    }
+
+    .content div div {
+        margin: 0px;
+    }
+
+    .nextProject {
+        > div {
+            @include v.grid-col(1fr 1fr, 0px 3.25rem);
+            max-width: 100%;
+            padding-right: v.$media-padding-right;
+     
+    
+            h3 {
+                grid-column: 2/3;
+            }
+    
+            a {
+                grid-column: 2/3;
+                width: fit-content;
+                transition: v.$transition-basic;
+
+                &:focus {
+                    @include v.focus-card;
+                    outline-offset: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .article {
+        width: 29.5rem;
+        padding: 1.25rem 3.25rem 2rem 3.25rem;
+
+        a {
+            padding: 1.25rem 3.25rem 2rem 3.25rem;
+        }
+
+        h3 {
+            position: relative;
+            margin-top: -2rem;
+            margin-bottom: calc(1.25rem - 0.5rem);
+            padding: 0.5rem 1.5rem;
+            width: fit-content;
+            background-color: v.$yellow;
+            border-radius: v.$radius-12;
+            box-shadow: 5px -5px 0px 0px v.$black;
+            border: 2px solid v.$black;
+        }
+
+        p {
+            @include v.f16;
+        }
+
+        .overlay {
+            margin: 0px -2rem;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .main > div, .nextProject div {
+        @include v.max-1300;
+    }
+}

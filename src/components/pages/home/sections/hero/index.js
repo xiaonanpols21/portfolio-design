@@ -17,7 +17,7 @@ export default function Hero() {
                     <h1>Xiao NaN</h1>
                     <p>Designer</p>
                     <Tags/>
-                    <p>Een creatieve designer voor oog voor detail waarbij toegankelijkheid belangrijk is voor iedereen!</p>
+                    <p>Een creatieve designer met oog voor detail en een technische basis waarbij toegankelijkheid belangrijk is voor iedereen!</p>
                     <LinkPrimaire
                         link={"/over-mij"}
                         aria="Over mij knop"

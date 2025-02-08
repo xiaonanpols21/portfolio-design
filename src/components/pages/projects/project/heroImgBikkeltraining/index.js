@@ -19,18 +19,18 @@ export default function HeroImg({data}) {
     return (
         <>
             <ImgSimple
-                img={data.acf.images[0]}
-                alt={data.title.rendered}
+                img={"/img/projects/bikkeltraining.jpg"}
+                alt={"Bikkeltraining"}
                 classes={styles.heroImg}
                 onClick={handleOpen}
             />
             
             <dialog ref={dialogRef} className={styles.dialog}>
                 <Image
-                    src={data.acf.images[0]}
+                    src={"/img/projects/bikkeltraining.jpg"}
                     width={800}
                     height={800}
-                    alt={data.title.rendered}
+                    alt={"Bikkeltraining"}
                 />
                 <BtnPrimaireShadow
                     aria="Sluit knop"

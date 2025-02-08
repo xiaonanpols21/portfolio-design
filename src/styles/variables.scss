@@ -199,7 +199,8 @@ $padding-top-nav: calc(4.75rem + 1rem + 8px + 3rem);
     position: absolute;
     background-image: url($img);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 @mixin divider-btm {
@@ -316,6 +317,7 @@ $padding-top-nav: calc(4.75rem + 1rem + 8px + 3rem);
 
 // Dialog
 @mixin dialog {
+    position: relative;
     margin: auto;
     border: none;
     background: none;
@@ -325,30 +327,32 @@ $padding-top-nav: calc(4.75rem + 1rem + 8px + 3rem);
         background: rgba($black, 0.5);
     }
     
-    > img:first-of-type {
-        object-fit: contain;
-        width: 100%;
+    div {
+        @include bg-img("/../../img/projects/deka-3.jpg");
+        position: relative;
+        display: block;
+        object-fit: cover;
+        width: 320px;
+        height: 300px;
         padding: 1.25rem;
 
-        @media (min-width: 950px) {
-            width: 900px;
-            height: fit-content;
+        @media (min-width: 693px) { 
+            background-size: cover;
+            background-position: center;
+            width: 650px;
+            height: 400px;
         }
+        
     }
 }
 
 @mixin dialog-close {
     position: absolute;
-    top: 20%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     @media (min-width: 693px) { 
         top: 10%;
-    }
-
-    @media (min-width: 950px) {
-        top: 30px;
-        left: calc(100% - 30px - 8px);
     }
 }
