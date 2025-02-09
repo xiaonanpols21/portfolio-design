@@ -34,7 +34,7 @@ export default async function Projects() {
                 </li>
                 <li>
                     <article className={`${styles.article}`} tabIndex={-1}>
-                        <Link href={`/projecten/bikkeltraining`}>
+                        <Link href={`/projecten/xiaoco-ijs`}>
                             <h3>Xiaoco Ijs</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
                             <ul>

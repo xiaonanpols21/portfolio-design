@@ -85,6 +85,45 @@ body {
 			background-image: url("../../public/img/projects/deka-3.jpg");
 		}
 	}
+
+	// Xiaoco ijs slider
+	&:has(input[value="xiao-1"]:checked) {
+		.slider_dialog__WEaJA div {
+			background-image: url("../../public/img/projects/xiaoco-ijs.png");
+		}
+	}
+
+	&:has(input[value="xiao-2"]:checked) {
+		.slider_dialog__WEaJA div {
+			background-image: url("../../public/img/projects/xiaoco-ijs-2.jpg");
+		}
+	}
+
+	&:has(input[value="xiao-3"]:checked) {
+		.slider_dialog__WEaJA div {
+			background-image: url("../../public/img/projects/xiaoco-ijs-3.jpg");
+		}
+	}
+
+	// Xiaoco ijs radio
+	&:has(input[value="xiao-1-radio"]:checked) {
+		.radio_overlay__p2GFP div, .radio_dialog__tLb84 div {
+			background-image: url("../../public/img/projects/xiaoco-ijs.png");
+		}
+	}
+
+	&:has(input[value="xiao-2-radio"]:checked) {
+		.radio_overlay__p2GFP div, .radio_dialog__tLb84 div {
+			background-image: url("../../public/img/projects/xiaoco-ijs-2.jpg");
+		}
+	}
+
+	&:has(input[value="xiao-3-radio"]:checked) {
+		.radio_overlay__p2GFP div, .radio_dialog__tLb84 div {
+			background-image: url("../../public/img/projects/xiaoco-ijs-3.jpg");
+		}
+	}
+
 }
 
 * {
