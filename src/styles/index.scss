@@ -124,6 +124,56 @@ body {
 		}
 	}
 
+	// Over mij ijs slider
+	&:has(input[value="me-1"]:checked) {
+		.slider_dialog__0PJBK div {
+			background-image: url("../../public/img/gallery/g-1.jpg");
+		}
+	}
+
+	&:has(input[value="me-2"]:checked) {
+		.slider_dialog__0PJBK div {
+			background-image: url("../../public/img/gallery/g-2.jpeg");
+		}
+	}
+
+	&:has(input[value="me-3"]:checked) {
+		.slider_dialog__0PJBK div {
+			background-image: url("../../public/img/gallery/g-3.jpg");
+		}
+	}
+
+	&:has(input[value="me-4"]:checked) {
+		.slider_dialog__0PJBK div {
+			background-image: url("../../public/img/gallery/g-4.jpg");
+		}
+	}
+
+	// Over mijs radio
+	&:has(input[value="me-1-radio"]:checked) {
+		.radio_overlay__ui6td div, .radio_dialog__jhSgb div {
+			background-image: url("../../public/img/gallery/g-1.jpg");
+		}
+	}
+
+	&:has(input[value="me-2-radio"]:checked) {
+		.radio_overlay__ui6td div, .radio_dialog__jhSgb div {
+			background-image: url("../../public/img/gallery/g-2.jpeg");
+		}
+	}
+
+	&:has(input[value="me-3-radio"]:checked) {
+		.radio_overlay__ui6td div, .radio_dialog__jhSgb div {
+			background-image: url("../../public/img/gallery/g-3.jpg");
+		}
+	}
+
+	&:has(input[value="me-4-radio"]:checked) {
+		.radio_overlay__ui6td div, .radio_dialog__jhSgb div {
+			background-image: url("../../public/img/gallery/g-4.jpg");
+		}
+	}
+
 }
 
 * {
