@@ -1,9 +1,6 @@
 "use client";
-import { useState, useRef } from 'react';
-import Image from 'next/image';
+import { useRef } from 'react';
 import ImgSimple from "@/components/cards/imgSimpleSec";
-import ImgSimpleBtn from "../../buttons/imgSimple";
-import ImgSimpleRadio from "../../cards/imgSimple";
 import BtnPrimaireShadow from '../../buttons/primaireShadow';
 import styles from "./radio.module.scss";
 

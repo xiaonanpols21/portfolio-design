@@ -55,21 +55,18 @@ export default function Project() {
             <section className={styles.nextProject}>
                 <div>
                     <h3>Volgende project</h3>
-                    <Link href={`/projecten/xiaoco-ijs`}>
+                    <Link href={`/projecten/bikkeltraining`}>
                         <article className={`${styles.article}`} tabIndex={-1}>
-                            <h3>Xiaoco Ijs</h3>
-                            <p>Een Ijs kiosk designen en bouwen.</p>
+                            <h3>Bikkeltraining</h3>
+                            <p>Een sportschoolwebsite designen met Sketch.</p>
                             <ul>
                                 <li>UI</li>
-                                <li>Adobe XD</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>After Affects</li>
+                                <li>Sketch</li>
+                                <li>WordPress</li>
                             </ul>
                             <div className={styles.overlay}>
                                 <Image
-                                    src={"/img/projects/xiaoco-ijs.png"}
+                                    src={"/img/projects/bikkeltraining.jpg"}
                                     width={480}
                                     height={152}
                                     alt="Xiaoco Ijs"

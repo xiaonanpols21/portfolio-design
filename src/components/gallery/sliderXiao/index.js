@@ -1,7 +1,6 @@
 "use client";
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import ImgSimple from "../../buttons/imgSimple";
 import BtnPrimaireShadow from '../../buttons/primaireShadow';
 import styles from "./slider.module.scss";
 
