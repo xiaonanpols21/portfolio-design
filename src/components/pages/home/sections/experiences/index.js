@@ -18,13 +18,7 @@ export default async function Experiences() {
                                     <p>Food corner medewerker</p>
                                 </section>
                             </li>
-                            <li>
-                                <section className={`${styles.card}`} tabIndex={0}>
-                                    <h4>HBO CMD: Communication Multimedia Design</h4>
-                                    <p className={styles.education}>2022 - 2025</p>
-                                    <p>1e jaar propedeuse, Cum Laude</p>
-                                </section>
-                            </li>
+                        
                         </ul>
                     </li>
                     <li>
@@ -35,13 +29,6 @@ export default async function Experiences() {
                                     <h4>Devani</h4>
                                     <p>2023 - 2024</p>
                                     <p>Front-end developer en Designer</p>
-                                </section>
-                            </li>
-                            <li>
-                                <section className={`${styles.card}`} tabIndex={0}>
-                                    <h4>HBO CMD: Communication Multimedia Design</h4>
-                                    <p className={styles.education}>2022 - 2025</p>
-                                    <p>1e jaar propedeuse, Cum Laude</p>
                                 </section>
                             </li>
                         </ul>
@@ -56,6 +43,11 @@ export default async function Experiences() {
                                     <p>Front-end developer en Designer</p>
                                 </section>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>2020</h3>
+                        <ul>
                             <li>
                                 <section className={`${styles.card}`} tabIndex={0}>
                                     <h4>HBO CMD: Communication Multimedia Design</h4>

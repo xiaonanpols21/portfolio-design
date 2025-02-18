@@ -21,6 +21,7 @@ export default function Project() {
                     <div>
                         <h1>Xiaoco Ijs</h1>
                         <ul>
+                            <li>UX</li>
                             <li>UI</li>
                             <li>Adobe XD</li>
                             <li>HTML</li>

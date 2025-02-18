@@ -59,6 +59,7 @@ export default function Project() {
                             <h3>Xiaoco Ijs</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
                             <ul>
+                                <li>UX</li>
                                 <li>UI</li>
                                 <li>Adobe XD</li>
                                 <li>HTML</li>

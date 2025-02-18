@@ -53,11 +53,9 @@ export default function Project() {
                             <h3>Shift Savy</h3>
                             <p>Een Ijs kiosk designen en bouwen.</p>
                             <ul>
+                                <li>UX</li>
                                 <li>UI</li>
-                                <li>Adobe XD</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                                <li>Figma</li>
                                 <li>After Affects</li>
                             </ul>
                             <div className={styles.overlay}>
